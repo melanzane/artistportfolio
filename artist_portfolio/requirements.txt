@@ -1,6 +1,7 @@
 anyascii==0.3.2
 asgiref==3.8.1
 beautifulsoup4==4.13.4
+Brotli==1.1.0
 certifi==2025.4.26
 charset-normalizer==3.4.2
 defusedxml==0.7.1
@@ -29,4 +30,5 @@ telepath==0.3.1
 typing_extensions==4.13.2
 urllib3==2.4.0
 wagtail==6.4.1
+whitenoise==6.9.0
 Willow==1.10.0
