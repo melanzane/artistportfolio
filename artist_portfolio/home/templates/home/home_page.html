@@ -1,8 +1,243 @@
 {% extends "base.html" %}
-{% load wagtailcore_tags %}
+{% load static wagtailcore_tags %}
 
-{% block body_class %}template-homepage{% endblock %}
+{% block body_class %}homepage{% endblock %}
 
 {% block content %}
-    {{ page.body|richtext }}
+
+<!-- HOME -->
+<div id="home"></div>
+
+<nav>
+    <div class="logo">
+        <a href="#home" class="scrollTo" data-scrollTo="home">Herman<em>ders</em></a>
+    </div>
+    <div class="menu-icon">
+        <span></span>
+    </div>
+</nav>
+
+<!-- VIDEO HEADER -->
+<div id="video-container">
+    <div class="video-overlay"></div>
+    <div class="video-content">
+        <div class="inner">
+            <h1>Artist <em>Portfolio</em></h1>
+            <p>metal and more</p>
+            <div class="scroll-icon">
+                <a class="scrollTo" data-scrollTo="portfolio" href="#">
+                    <img src="{% static 'img/scroll-icon.png' %}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <video autoplay loop muted>
+        <source src="{% static 'highway-loop.mp4' %}" type="video/mp4">
+    </video>
+</div>
+
+<!-- PORTFOLIO GRID -->
+<div class="full-screen-portfolio" id="portfolio">
+    <div class="container-fluid">
+
+        <!-- ITEM 1 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+                <a href="{% static 'img/big_portfolio_item_4.png' %}" data-lightbox="image-1">
+                    <div class="thumb">
+                        <div class="hover-effect">
+                            <div class="hover-content">
+                                <h1>Biodiesel <em>squid</em></h1>
+                                <p>Awesome Subtitle Goes Here</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/portfolio_item_4.png' %}" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+                <a href="{% static 'img/big_portfolio_item_3.png' %}" data-lightbox="image-1">
+                    <div class="thumb">
+                        <div class="hover-effect">
+                            <div class="hover-content">
+                                <h1>Raclette <em>taxidermy</em></h1>
+                                <p>Awesome Subtitle Goes Here</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/portfolio_item_3.png' %}" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+                <a href="{% static 'img/big_portfolio_item_2.png' %}" data-lightbox="image-1">
+                    <div class="thumb">
+                        <div class="hover-effect">
+                            <div class="hover-content">
+                                <h1>Humblebrag <em>brunch</em></h1>
+                                <p>Awesome Subtitle Goes Here</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/portfolio_item_2.png' %}" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+                <a href="{% static 'img/big_portfolio_item_1.png' %}" data-lightbox="image-1">
+                    <div class="thumb">
+                        <div class="hover-effect">
+                            <div class="hover-content">
+                                <h1>Succulents <em>chambray</em></h1>
+                                <p>Awesome Subtitle Goes Here</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/portfolio_item_1.png' %}" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+                <a href="{% static 'img/big_portfolio_item_5.png' %}" data-lightbox="image-1">
+                    <div class="thumb">
+                        <div class="hover-effect">
+                            <div class="hover-content">
+                                <h1>Freegan <em>aesthetic</em></h1>
+                                <p>Awesome Subtitle Goes Here</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/portfolio_item_5.png' %}" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ITEM 6 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+                <a href="{% static 'img/big_portfolio_item_6.png' %}" data-lightbox="image-1">
+                    <div class="thumb">
+                        <div class="hover-effect">
+                            <div class="hover-content">
+                                <h1>Taiyaki <em>vegan</em></h1>
+                                <p>Awesome Subtitle Goes Here</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/portfolio_item_6.png' %}" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ITEM 7 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+                <a href="{% static 'img/big_portfolio_item_7.png' %}" data-lightbox="image-1">
+                    <div class="thumb">
+                        <div class="hover-effect">
+                            <div class="hover-content">
+                                <h1>Thundercats <em>santo</em></h1>
+                                <p>Awesome Subtitle Goes Here</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/portfolio_item_7.png' %}" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ITEM 8 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+                <a href="{% static 'img/big_portfolio_item_8.png' %}" data-lightbox="image-1">
+                    <div class="thumb">
+                        <div class="hover-effect">
+                            <div class="hover-content">
+                                <h1>Wayfarers <em>yuccie</em></h1>
+                                <p>Awesome Subtitle Goes Here</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/portfolio_item_8.png' %}" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ITEM 9 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item">
+                <a href="{% static 'img/big_portfolio_item_9.png' %}" data-lightbox="image-1">
+                    <div class="thumb">
+                        <div class="hover-effect">
+                            <div class="hover-content">
+                                <h1>Disrupt <em>street</em></h1>
+                                <p>Awesome Subtitle Goes Here</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/portfolio_item_9.png' %}" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>Copyright © 2025 Sofia Orlova</p>
+</footer>
+
+<!-- OVERLAY MENU (FOR NAVIGATION) -->
+<section class="overlay-menu">
+    <div class="container">
+        <div class="row">
+            <div class="main-menu">
+                <ul>
+                    {% if page.about_page %}
+                    <li><a href="{{ page.about_page.url }}">ABOUT</a></li>
+                    {% endif %}
+                    {% if page.gallery_page %}
+                    <li><a href="{{ page.gallery_page.url }}">GALLERY</a></li>
+                    {% endif %}
+                    {% if page.contact_page %}
+                    <li><a href="{{ page.contact_page.url }}">CONTACT</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock %}
